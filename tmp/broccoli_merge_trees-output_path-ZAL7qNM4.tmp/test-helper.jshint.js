@@ -1,0 +1,1 @@
+/Users/alyyakan/Desktop/kodr project/kodr-mock/tmp/broccoli_merge_trees-input_base_path-1kMusGts.tmp/0/test-helper.jshint.js

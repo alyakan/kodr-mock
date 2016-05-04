@@ -1,0 +1,1 @@
+/Users/alyyakan/Desktop/kodr project/kodr-mock/tmp/funnel-input_base_path-BQZ3Dmov.tmp/0/lib/system/inflector.js
