@@ -350,12 +350,12 @@ define("kodr-mock/templates/application", ["exports"], function (exports) {
           "loc": {
             "source": null,
             "start": {
-              "line": 29,
-              "column": 1
+              "line": 36,
+              "column": 4
             },
             "end": {
-              "line": 31,
-              "column": 1
+              "line": 38,
+              "column": 4
             }
           },
           "moduleName": "kodr-mock/templates/application.hbs"
@@ -366,7 +366,7 @@ define("kodr-mock/templates/application", ["exports"], function (exports) {
         hasRendered: false,
         buildFragment: function buildFragment(dom) {
           var el0 = dom.createDocumentFragment();
-          var el1 = dom.createTextNode("		");
+          var el1 = dom.createTextNode("					");
           dom.appendChild(el0, el1);
           var el1 = dom.createComment("");
           dom.appendChild(el0, el1);
@@ -379,7 +379,7 @@ define("kodr-mock/templates/application", ["exports"], function (exports) {
           morphs[0] = dom.createMorphAt(fragment, 1, 1, contextualElement);
           return morphs;
         },
-        statements: [["inline", "arena-item", [], ["arena", ["subexpr", "@mut", [["get", "arena", ["loc", [null, [30, 21], [30, 26]]]]], [], []]], ["loc", [null, [30, 2], [30, 28]]]]],
+        statements: [["inline", "arena-item", [], ["arena", ["subexpr", "@mut", [["get", "arena", ["loc", [null, [37, 24], [37, 29]]]]], [], []]], ["loc", [null, [37, 5], [37, 31]]]]],
         locals: ["arena"],
         templates: []
       };
@@ -398,7 +398,7 @@ define("kodr-mock/templates/application", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 35,
+            "line": 46,
             "column": 0
           }
         },
@@ -510,13 +510,43 @@ define("kodr-mock/templates/application", ["exports"], function (exports) {
         dom.appendChild(el1, el2);
         var el2 = dom.createTextNode("\n\n\n\n	");
         dom.appendChild(el1, el2);
-        var el2 = dom.createElement("h3");
-        var el3 = dom.createTextNode("Arenas");
+        var el2 = dom.createElement("div");
+        dom.setAttribute(el2, "class", "page-header");
+        var el3 = dom.createTextNode("\n    ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("h3");
+        var el4 = dom.createTextNode("Arenas");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n  ");
         dom.appendChild(el2, el3);
         dom.appendChild(el1, el2);
-        var el2 = dom.createTextNode("\n");
+        var el2 = dom.createTextNode("\n	");
         dom.appendChild(el1, el2);
-        var el2 = dom.createComment("");
+        var el2 = dom.createElement("div");
+        dom.setAttribute(el2, "class", "row");
+        var el3 = dom.createTextNode("\n		");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("div");
+        dom.setAttribute(el3, "class", "col-md-8 col-md-offset-2");
+        var el4 = dom.createTextNode("\n\n			\n			");
+        dom.appendChild(el3, el4);
+        var el4 = dom.createElement("ul");
+        dom.setAttribute(el4, "class", "list-group");
+        var el5 = dom.createTextNode("\n");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createComment("");
+        dom.appendChild(el4, el5);
+        var el5 = dom.createTextNode("			");
+        dom.appendChild(el4, el5);
+        dom.appendChild(el3, el4);
+        var el4 = dom.createTextNode("\n		");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode("\n	");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n	\n");
         dom.appendChild(el1, el2);
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n\n");
@@ -527,10 +557,10 @@ define("kodr-mock/templates/application", ["exports"], function (exports) {
         var element0 = dom.childAt(fragment, [2]);
         var morphs = new Array(2);
         morphs[0] = dom.createMorphAt(element0, 3, 3);
-        morphs[1] = dom.createMorphAt(element0, 7, 7);
+        morphs[1] = dom.createMorphAt(dom.childAt(element0, [7, 1, 1]), 1, 1);
         return morphs;
       },
-      statements: [["content", "outlet", ["loc", [null, [24, 3], [24, 13]]]], ["block", "each", [["get", "model", ["loc", [null, [29, 9], [29, 14]]]]], [], 0, null, ["loc", [null, [29, 1], [31, 10]]]]],
+      statements: [["content", "outlet", ["loc", [null, [24, 3], [24, 13]]]], ["block", "each", [["get", "model", ["loc", [null, [36, 12], [36, 17]]]]], [], 0, null, ["loc", [null, [36, 4], [38, 13]]]]],
       locals: [],
       templates: [child0]
     };
@@ -552,7 +582,7 @@ define("kodr-mock/templates/components/arena-item", ["exports"], function (expor
             "column": 0
           },
           "end": {
-            "line": 6,
+            "line": 10,
             "column": 0
           }
         },
@@ -564,10 +594,28 @@ define("kodr-mock/templates/components/arena-item", ["exports"], function (expor
       hasRendered: false,
       buildFragment: function buildFragment(dom) {
         var el0 = dom.createDocumentFragment();
-        var el1 = dom.createTextNode("\n\n");
+        var el1 = dom.createTextNode("\n");
+        dom.appendChild(el0, el1);
+        var el1 = dom.createElement("style");
+        dom.setAttribute(el1, "type", "text/css");
+        var el2 = dom.createTextNode("\n	.wrap {\n		height: 100%;\n	}\n");
+        dom.appendChild(el1, el2);
+        dom.appendChild(el0, el1);
+        var el1 = dom.createTextNode("\n");
         dom.appendChild(el0, el1);
         var el1 = dom.createElement("li");
-        var el2 = dom.createComment("");
+        dom.setAttribute(el1, "class", "list-group-item wrap");
+        var el2 = dom.createElement("strong");
+        var el3 = dom.createComment("");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("button");
+        dom.setAttribute(el2, "class", "btn btn-primary btn-xs pull-right");
+        dom.setAttribute(el2, "type", "button");
+        var el3 = dom.createTextNode("Enter");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("br");
         dom.appendChild(el1, el2);
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n\n");
@@ -580,11 +628,11 @@ define("kodr-mock/templates/components/arena-item", ["exports"], function (expor
       },
       buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
         var morphs = new Array(2);
-        morphs[0] = dom.createMorphAt(dom.childAt(fragment, [1]), 0, 0);
-        morphs[1] = dom.createMorphAt(fragment, 3, 3, contextualElement);
+        morphs[0] = dom.createMorphAt(dom.childAt(fragment, [3, 0]), 0, 0);
+        morphs[1] = dom.createMorphAt(fragment, 5, 5, contextualElement);
         return morphs;
       },
-      statements: [["content", "arena.name", ["loc", [null, [3, 4], [3, 18]]]], ["content", "yield", ["loc", [null, [5, 0], [5, 9]]]]],
+      statements: [["content", "arena.name", ["loc", [null, [7, 41], [7, 55]]]], ["content", "yield", ["loc", [null, [9, 0], [9, 9]]]]],
       locals: [],
       templates: []
     };
