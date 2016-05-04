@@ -1,0 +1,1 @@
+/Users/alyyakan/Desktop/kodr project/kodr-mock/tmp/broccoli_merge_trees-input_base_path-xIA6yjdt.tmp/0/modules/ember-cli-app-version/initializer-factory.js
