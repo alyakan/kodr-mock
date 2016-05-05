@@ -1,1 +1,0 @@
-/Users/alyyakan/Desktop/kodr project/kodr-mock/tmp/funnel-input_base_path-jZAW1X6I.tmp/0/initializer-factory.js

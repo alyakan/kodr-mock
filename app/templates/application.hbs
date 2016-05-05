@@ -1,6 +1,6 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
-    <div class="navbar-header">
+    {{!-- <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed"
       data-toggle="collapse" data-target="#menu-collapse">
         <span class="sr-only">Toggle navigation</span>
@@ -8,35 +8,31 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+    </div> --}}
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Kodr</a>
     </div>
-
-    <div class="collapse navbar-collapse" id="menu-collapse">
-      <ul class="nav navbar-nav">
-      	<li><a href="#">Arenas</a></li>
-      	<li><a href="#">Login</a></li>
-      </ul>
+    
+    <ul class="nav navbar-nav">
+    	<li><a href="#">Arenas</a></li>
+    	<li><a href="#">Login</a></li>
+    </ul>
     </div>
-  </div>
 </nav>
-
 <div class="container">
 	<h2>Welcome to Kodr</h2>
   	{{outlet}}
-
-
-
+    {{login-page}}
 	<div class="page-header">
     <h3>Arenas</h3>
   </div>
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-
-			
-			<ul class="list-group">
+			<div class="list-group">
 				{{#each model as |arena|}}
 					{{arena-item arena=arena}}
 				{{/each}}
-			</ul>
+			</div>
 		</div>
 	</div>
 	

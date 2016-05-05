@@ -1,0 +1,1 @@
+/Users/alyyakan/Desktop/kodr project/kodr-mock/tmp/broccoli_merge_trees-input_base_path-AHXL2tsQ.tmp/18/helpers/module-for-acceptance.js
