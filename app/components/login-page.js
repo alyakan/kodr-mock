@@ -4,7 +4,7 @@ var toastr = window.toastr;
 export default Ember.Component.extend({
 	authManager: Ember.inject.service('session'),
   token: storageFor('token'),
-
+  current_user: storageFor('current-user'),
   actions: {
     authenticate() {
       var that = this;
@@ -28,11 +28,10 @@ export default Ember.Component.extend({
           data: that.getProperties('identification', 'password')
       }).done(function(res) {
         var uid = res.user_id;
-        
         that.set('token.key', res.token);
-        that.set('token.email', res.email);
-        that.set('token.uid', uid);
-        console.log("LOL", res.user_email);
+        that.set('current_user.username', res.username);
+        that.set('current_user.email', res.email);
+        that.set('current_user.id', uid);
       }).fail(function(xhr) {
           that.set('errorMessage', xhr.responseText);
       });

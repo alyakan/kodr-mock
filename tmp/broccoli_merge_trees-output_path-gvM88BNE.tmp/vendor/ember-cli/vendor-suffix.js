@@ -1,0 +1,1 @@
+/Users/alyyakan/Desktop/kodr project/kodr-mock/tmp/config_replace-output_path-vkD5tckG.tmp/vendor-suffix.js

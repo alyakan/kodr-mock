@@ -15,19 +15,36 @@
     
     <ul class="nav navbar-nav">
     	<li><a href="#">Arenas</a></li>
-    	<li><a href="#">Login</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      {{#if current_user.email}}
+        <li>
+          <a href=""><i class="fa fa-user"></i> <samp>{{current_user.username}}</samp></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-sign-out"></i> Logout</a>
+        </li>
+      {{else}}
+        <li>
+          <a href="#"><i class="fa fa-user-plus"></i> Sign Up</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-sign-in"></i> Login</a>
+        </li>
+      {{/if}}
+      
     </ul>
     </div>
 </nav>
 <div class="container">
 	<h2>Welcome to Kodr</h2>
   	{{outlet}}
-    {{login-page}}
+    {{login-page store=store}}
 	<div class="page-header">
     <h3>Arenas</h3>
   </div>
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+		<div class="col-md-12">
 			<div class="list-group">
 				{{#each model as |arena|}}
 					{{arena-item arena=arena}}

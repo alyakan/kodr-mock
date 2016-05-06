@@ -1,0 +1,1 @@
+/Users/alyyakan/Desktop/kodr project/kodr-mock/tmp/funnel-input_base_path-C4kbqLSQ.tmp/0/resolver.js

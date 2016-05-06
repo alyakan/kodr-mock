@@ -1,0 +1,1 @@
+/Users/alyyakan/Desktop/kodr project/kodr-mock/tmp/broccoli_merge_trees-input_base_path-STYp6paG.tmp/2/initializers/app-version.js
