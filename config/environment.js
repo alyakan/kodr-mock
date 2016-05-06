@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'kodr-mock',
     environment: environment,
     baseURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -68,6 +68,11 @@ module.exports = function(environment) {
     authorizationHeaderName: 'X-K-Authorization',
     headers: {},
   };
+
+  // ENV['simple-auth-devise'] = {
+  //   identificationAttributeName: 'user_email',
+  //   tokenAttributeName: 'access_token',
+  // };
 
   return ENV;
 };

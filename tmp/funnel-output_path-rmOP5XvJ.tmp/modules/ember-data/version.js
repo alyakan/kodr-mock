@@ -1,0 +1,1 @@
+/Users/alyyakan/Desktop/kodr project/kodr-mock/tmp/creator-output_path-JpNc77II.tmp/version.js

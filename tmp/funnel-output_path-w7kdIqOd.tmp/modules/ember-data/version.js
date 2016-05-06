@@ -1,1 +1,0 @@
-/Users/alyyakan/Desktop/kodr project/kodr-mock/tmp/creator-output_path-dhREf8Ge.tmp/version.js

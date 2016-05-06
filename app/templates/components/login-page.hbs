@@ -1,13 +1,17 @@
-{{authManager.isAuthenticated}}
-<div class="container">
-  <div class="page-header">
-    <h3>Sign in</h3>
-  </div>
+<div class="container">  
+  	{{#if token.key}}
+	  Logged in as {{token.email}}
+	{{else}}
+		<div class="page-header">
+		    <h3>Sign in</h3>
+		  </div>
+		<form class="form-group" {{action 'authenticate' on='submit'}}>
+			{{input value=identification class="form-control" placeholder='Login'}}<br>
+			{{input value=password class="form-control" placeholder='Password' type='password'}}<br>
+			<button type="submit" class="btn btn-primary btn-block" type="submit"><i class="fa fa-unlock-alt"></i> Login</button>
+		</form>
+	{{/if}}
 
-<form class="form-group" {{action 'authenticate' on='submit'}}>
-	{{input value=identification class="form-control" placeholder='Login'}}<br>
-	{{input value=password class="form-control" placeholder='Password' type='password'}}<br>
-	<button type="submit" class="btn btn-primary btn-block" type="submit"><i class="fa fa-unlock-alt"></i> Login</button>
-</form>
+
 {{yield}}
 </div>
